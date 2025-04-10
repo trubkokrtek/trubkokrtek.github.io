@@ -6,7 +6,7 @@
 }
 a{
     text-decoration: none;
-
+    margin-bottom: 1rem;
 }
 body{
     display: flex;
@@ -51,7 +51,9 @@ body{
     grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
     grid-template-columns: minmax(2em, max-content) 1fr minmax(2em, max-content);
     border: 1px solid var(--black);
-    overflow: scroll;
+    border-radius: 1em;
+    overflow: auto;
+    padding: 1em;
 }
 .button{
     background-color: var(--primary);
@@ -68,11 +70,11 @@ body{
     border-radius: .5em;
 }
 .user__text{
+    display: block;
     color: #ffffff;
     background-color: var(--primary);
     padding: 10px;
     border-radius: .5em;
-    margin-left: 0;
 }
 .bot{
     grid-column: -2 / -1;
@@ -81,12 +83,6 @@ body{
     display: grid;
 }
 .chatbot--icon.active{
-    display: none;
-}
-.chatbot--close.active{
-    display: inline;
-}
-.chatbot--close{
     display: none;
 }
 .chatbot--icon{
@@ -102,11 +98,9 @@ body{
     color: #ffffff;
 }
 .chatbot--close{
-    font-size: 2em;
-    font-weight: 500;
-    color: var(--black);
     position: relative;
-    left: 70%;
+    left: calc(100% - 24px);
+    margin-bottom: .5em;
 }
 .footer--link{
     color: var(--primary);
@@ -118,7 +112,7 @@ body{
     border-radius: 50%;
     margin: 0 auto;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
     .chatbot{
         min-width: 100vw;
     }
