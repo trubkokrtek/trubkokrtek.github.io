@@ -1,6 +1,6 @@
 const links = {
-    "parkování": "https://parking.liberec.cz//",
-    "parkoviště": "https://parking.liberec.cz//",
+    "parkování": "https://www.parking.liberec.cz//",
+    "parkoviště": "https://www.parking.liberec.cz//",
     "ztráty": "https://www.liberec.cz/ztraty-nalezy/",
     "uzavírky": "https://www.liberec.cz/uzavirky/",
     "aktivity": "https://www.kudyznudy.cz/kam-pojedete/liberecky-kraj/jizerske-hory/liberec",
