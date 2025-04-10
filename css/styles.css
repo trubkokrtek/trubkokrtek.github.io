@@ -14,6 +14,7 @@ body{
     min-height: 100vh;
     justify-content: space-between;
     color: var(--black);
+    max-width: 100vw;
 }
 
 .header{
@@ -100,6 +101,7 @@ body{
 }
 .bot__text{
     background-color: var(--gray);
+    color: var(--black);
     padding: 10px;
     border-radius: .5em;
 }
@@ -179,8 +181,12 @@ body{
     display: none;
     border: 1px solid var(--black);
     border-radius: 2em;
-    margin: 0 auto;
+    margin: 1em auto;
     max-width: 50vw;
+}
+.bot--link{
+    color: var(--primary);
+    text-decoration: none;
 }
 @media screen and (max-width: 960px) {
     .chatbot{
