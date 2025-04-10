@@ -112,3 +112,13 @@ body{
     position: relative;
     left: 75%;
 }
+@media screen and (max-width: 768px) {
+    .chatbot{
+        min-width: 100vw;
+    }
+
+    .chatbot--close{
+        font-size: 1.5em;
+    }
+    
+}
