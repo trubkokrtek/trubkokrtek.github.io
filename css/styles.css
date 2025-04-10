@@ -184,12 +184,12 @@ body{
 }
 @media screen and (max-width: 960px) {
     .chatbot{
-        min-width: 100vw;
+        min-width: calc(100vw - 1em);
         border: 0;
         margin: 0;
     }
     .wrapper{
-        min-width: 100vw;
+        min-width: calc(100vw - 1em);
         margin: .25em;
     }
     .chatbot--close{
@@ -201,6 +201,5 @@ body{
         left: -20px;
         min-width: 40px;
         min-height: 40px;
-    }
-    
+    }   
 }
