@@ -6,6 +6,7 @@
     <title>Chatbot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="Lieb-Bot.png" type="image/png">
     <script src="src/hamburger.js"></script>
 </head>
 <body>
@@ -18,25 +19,32 @@
             <a class="chatbot--switch" href="#"><img class="image" src="Lieb-Bot.png"></a>
         </div>
         <div class="wrapper">
+            <div class="chatbot__header">
+                <img class="chatbot__header--logo" src="Lieb-Bot.png" alt="Logo">
+                <p class="chatbot__header--text">Lieb-Bot</p>
+                <button type="button" class="btn-close chatbot__header--close" aria-label="Close"></button>
+            </div>
             <div class="chatbot">
                 <div class="bot">
-                    <button type="button" class="btn-close chatbot--close" aria-label="Close"></button>
+                    
                     <p class="bot__text">Ahoj, já jsem Lieb-Bot. Tvůj průvodce stránkami města Liberce.</p>
                     <p class="bot__text">Jak ti mohu pomoci?</p>
                 </div>
                 <div class="user">
-                    <a class="user__text">Hledám kontakt</a>
-                    <a class="user__text">Otevírací doba městského úřadu?</a>
-                    <a class="user__text">Jaké jsou aktuality?</a>
-                    <a class="user__text">Kde se dá parkovat?</a>
-                    <a class="user__text">Jaké jsou nejbližší akce?</a>
-                    <a class="user__text" href="https://www.liberec.cz/ztraty-nalezy/#main" target="main">Něco jsem ztratil.</a>
-                    <div class="user__input">
-                        <input type="text" class="user__input--field" placeholder="Zadej dotaz...">
-                        <button type="button" class="user__input--btn">Odeslat</button>
-                    </div>
+                    <a class="user__text" href="https://www.liberec.cz/cz/obcan/kontakty/" target="_blank">Hledám kontakt</a>
+                    <a class="user__text" href="https://www.liberec.cz/uredni-doba-magistratu/" target="_blank">Jaká je otevírací doba městského úřadu?</a>
+                    <a class="user__text" href="" target="">Jaké jsou aktuality?</a>
+                    <a class="user__text" href="https://www.liberec.cz/doklady/" target="_blank">Jak je na tom můj doklad?</a>
+                    <a class="user__text" href="https://www.visitliberec.eu/kalendar-akci/" target="_blank">Jaké jsou nejbližší akce?</a>
+                    <a class="user__text" href="https://www.liberec.cz/ztraty-nalezy/#main" target="_blank">Něco jsem ztratil.</a>
+                    
+                </div>
+                <div class="user__input">
+                    <input type="text" class="user__input--field" placeholder="Zadej dotaz...">
+                    <button type="button" class="user__input--btn">Odeslat</button>
                 </div>
             </div>
+            <div class="wrapper--decoration"><p class="decoration"><br></p></div>
         </div>
     </main>
     <footer class="footer">

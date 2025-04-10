@@ -3,7 +3,7 @@
 
 document.addEventListener("click", (e) => {
     if (e.target.closest(".chatbot--icon")) {
-        const chatbot = document.querySelector(".chatbot");
+        const chatbot = document.querySelector(".wrapper");
         const chatbotswitch = document.querySelector(".chatbot--icon");
         if (chatbot) {
             chatbot.classList.toggle("active");
@@ -15,8 +15,8 @@ document.addEventListener("click", (e) => {
             var inputvalue = inputfield.value;
         }
     }
-    if (e.target.closest(".chatbot--close")) {
-        const chatbot = document.querySelector(".chatbot");
+    if (e.target.closest(".chatbot__header--close")) {
+        const chatbot = document.querySelector(".wrapper");
         const chatbotswitch = document.querySelector(".chatbot--icon");
         if (chatbot) {
             chatbot.classList.toggle("active");
@@ -34,9 +34,10 @@ document.addEventListener("click", (e) => {
             const node = document.querySelector(".user").firstChild;
             const clone = node.cloneNode(true);
             clone.value = inputvalue;
+            console.log(clone);
 
             const list = document.querySelector(".user");
-            list.insertBefore(clone, list.firstChild);
+            list.appendChild(clone);
         }
         catch (error) {
             console.error(error);
