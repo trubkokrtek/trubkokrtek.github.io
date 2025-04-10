@@ -110,9 +110,9 @@ body{
     font-weight: 500;
     color: var(--black);
     position: relative;
-    left: 75%;
+    left: 90%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .chatbot{
         min-width: 100vw;
     }
