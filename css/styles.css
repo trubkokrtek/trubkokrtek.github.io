@@ -1,0 +1,115 @@
+:root{
+    --primary: #de453a;
+    --secondary: #495057;
+    --gray: #dbdbdb;
+    --black: #151517;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    color: var(--black);
+}
+
+.header{
+    background-color: var(--black);
+    color: #ffffff;
+    min-width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    display: inline;
+}
+.header__text{
+    display: inline;
+    margin: auto;
+}
+.footer{
+    min-width: 100vw;
+    background-color: var(--black);
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.header__logo{
+    position: relative;
+    right: 10px;
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--primary);
+}
+.chatbot{
+    display: none;
+    max-width: 50vw;
+    margin: 0 auto;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: minmax(2em, max-content) 1fr minmax(2em, max-content);
+    border: 1px solid var(--black);
+    overflow: scroll;
+}
+.button{
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: .5em;
+    text-decoration: none;
+}
+.bot__text{
+    background-color: var(--gray);
+    padding: 10px;
+    border-radius: .5em;
+}
+.user__text{
+    color: #ffffff;
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: .5em;
+    margin-left: 0;
+}
+.bot{
+    grid-column: -2 / -1;
+}
+.chatbot.active{
+    display: grid;
+}
+.chatbot--icon.active{
+    display: none;
+}
+.chatbot--close.active{
+    display: inline;
+}
+.chatbot--close{
+    display: none;
+}
+.chatbot--icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0 auto;
+}
+.chatbot--switch{
+    text-decoration: none;
+    color: #ffffff;
+}
+.chatbot--close{
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--black);
+    position: relative;
+    left: 75%;
+    
+}
