@@ -79,6 +79,7 @@ document.addEventListener("click", (e) => {
                     span.textContent = "zde";
                     link.href = links["doprava"];
                     link.textContent = "Pokud referuješ na dopravu MHD klikni ";
+                    link.onclick = openwindow(links["doprava"]);
                     link.appendChild(span);
                     link.target = "_blank";
                     link.classList.add("bot__text");
@@ -88,6 +89,7 @@ document.addEventListener("click", (e) => {
                     span.classList.add("bot--link");
                     span.textContent = "zde";
                     link.href = links["uzavírky"];
+                    link.onclick = openwindow(links["uzavírky"]);
                     link.textContent = "A pokud referuješ na dopravu v Liberci klikni ";
                     link.appendChild(span);
                     link.target = "_blank";
@@ -100,6 +102,7 @@ document.addEventListener("click", (e) => {
                     span.classList.add("bot--link");
                     span.textContent = "zde";
                     link.href = links[string];
+                    link.onclick = openwindow(links[string.toLowerCase()]);
                     link.textContent = "Pokud referuješ na " + string + ", klikni ";
                     link.appendChild(span);
                     link.target = "_blank";
