@@ -40,6 +40,7 @@ body{
     padding: 1em;
 }
 .header__logo{
+    display: inline;
     position: relative;
     right: 10px;
     font-size: 4em;
@@ -59,7 +60,7 @@ body{
 }
 .redesign{
     max-width: 25vw;
-    margin: 0 auto;
+    margin: .5em auto;
 }
 .chatbot__header{
     height: 2em;
