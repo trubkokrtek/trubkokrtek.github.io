@@ -87,7 +87,6 @@ document.addEventListener("click", (e) => {
                     span = document.createElement("span");
                     span.classList.add("bot--link");
                     span.textContent = "zde";
-                    link.href = links["uzavírky"];
                     link.onclick = () => window.open(links["uzavírky"]);
                     link.textContent = "A pokud referuješ na dopravu v Liberci klikni ";
                     link.appendChild(span);
@@ -99,7 +98,6 @@ document.addEventListener("click", (e) => {
                     const span = document.createElement("span");
                     span.classList.add("bot--link");
                     span.textContent = "zde";
-                    link.href = links[string];
                     link.onclick = () => window.open(links[string.toLowerCase()]);
                     link.textContent = "Pokud referuješ na " + string + ", klikni ";
                     link.appendChild(span);
