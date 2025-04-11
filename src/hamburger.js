@@ -72,34 +72,13 @@ document.addEventListener("click", (e) => {
                     para.classList.add("bot__text");
                     bot.appendChild(para);
                 }
-                else if (string.toLowerCase() == "doprava"){
-                    var link = document.createElement("a");
-                    var span = document.createElement("span");
-                    span.classList.add("bot--link");
-                    span.textContent = "zde";
-                    link.href = links["doprava"];
-                    link.textContent = "Pokud referuješ na dopravu MHD klikni ";
-                    link.onclick = () => window.open(links["doprava"], "_blank");
-                    link.appendChild(span);;
-                    link.classList.add("bot__text");
-                    bot.appendChild(link);
-                    link = document.createElement("a");
-                    span = document.createElement("span");
-                    span.classList.add("bot--link");
-                    span.textContent = "zde";
-                    link.onclick = () => window.open(links["uzavírky"], "_blank");
-                    link.textContent = "A pokud referuješ na dopravu v Liberci klikni ";
-                    link.appendChild(span);
-                    link.classList.add("bot__text");
-                    bot.appendChild(link);
-                }
                 else if (links[string.toLowerCase()]) {
                     const link = document.createElement("a");
                     const span = document.createElement("span");
                     span.classList.add("bot--link");
-                    span.textContent = "zde";
-                    link.onclick = () => window.open(links[string.toLowerCase()], "_blank");
-                    link.textContent = "Pokud referuješ na " + string + ", klikni ";
+                    span.textContent = "sem";
+                    link.onclick = window.open(links[string.toLowerCase()], "_blank");
+                    link.textContent = "Byl jsi přesměrován ";
                     link.appendChild(span);
                     link.classList.add("bot__text");
                     bot.appendChild(link);
