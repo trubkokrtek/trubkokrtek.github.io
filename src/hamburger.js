@@ -79,9 +79,8 @@ document.addEventListener("click", (e) => {
                     span.textContent = "zde";
                     link.href = links["doprava"];
                     link.textContent = "Pokud referuješ na dopravu MHD klikni ";
-                    link.onclick = window.open(links["doprava"]);
-                    link.appendChild(span);
-                    link.target = "_blank";
+                    link.onclick = () => window.open(links["doprava"]);
+                    link.appendChild(span);;
                     link.classList.add("bot__text");
                     bot.appendChild(link);
                     link = document.createElement("a");
@@ -89,10 +88,9 @@ document.addEventListener("click", (e) => {
                     span.classList.add("bot--link");
                     span.textContent = "zde";
                     link.href = links["uzavírky"];
-                    link.onclick = window.open(links["uzavírky"]);
+                    link.onclick = () => window.open(links["uzavírky"]);
                     link.textContent = "A pokud referuješ na dopravu v Liberci klikni ";
                     link.appendChild(span);
-                    link.target = "_blank";
                     link.classList.add("bot__text");
                     bot.appendChild(link);
                 }
@@ -102,10 +100,9 @@ document.addEventListener("click", (e) => {
                     span.classList.add("bot--link");
                     span.textContent = "zde";
                     link.href = links[string];
-                    link.onclick = window.open(links[string.toLowerCase()]);
+                    link.onclick = () => window.open(links[string.toLowerCase()]);
                     link.textContent = "Pokud referuješ na " + string + ", klikni ";
                     link.appendChild(span);
-                    link.target = "_blank";
                     link.classList.add("bot__text");
                     bot.appendChild(link);
                 }
