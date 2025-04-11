@@ -92,7 +92,7 @@ document.addEventListener("click", (e) => {
             console.error(error);
         }
     }
-    if (e.target.closest(".bot__text")) {
+    if (e.target.closest(".bot--link")) {
         window.open(links[e.target.Id], "_blank");
     }
 });
