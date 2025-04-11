@@ -56,7 +56,10 @@ body{
     border-radius: 1em;
     overflow: auto;
     padding: 1em;
-
+}
+.redesign{
+    max-width: 25vw;
+    margin: 0 auto;
 }
 .chatbot__header{
     height: 2em;
@@ -206,6 +209,17 @@ body{
     padding: 10px;
     border-radius: .5em;
 }
+.redesign__main{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+}
+.redesign__image{
+    max-width: 100%;
+    height: 50vw;
+    margin: 0 auto;
+}
 @media screen and (max-width: 960px) {
     .chatbot{
         min-width: calc(100vw - 1em);
@@ -228,5 +242,15 @@ body{
     }  
     .table{
         min-width: 100vw;
+    }
+    .redesign__main{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .redesign__image{
+        height: 100vw;
+    }
+    .redesign__image--container{
+        display: flex;
     }
 }
