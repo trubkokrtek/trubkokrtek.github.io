@@ -76,9 +76,11 @@ document.addEventListener("click", (e) => {
                     const link = document.createElement("a");
                     const span = document.createElement("span");
                     span.classList.add("bot--link");
-                    span.textContent = "sem";
-                    link.onclick = window.open(links[string.toLowerCase()], "_blank");
-                    link.textContent = "Byl jsi přesměrován ";
+                    span.textContent = "zde";
+                    link.href = links[string.toLowerCase()];
+                    link.id = string.toLowerCase();
+                    link.target = "_blank";
+                    link.textContent = "Pokud hledáš informace o " + string + ", klikni ";
                     link.appendChild(span);
                     link.classList.add("bot__text");
                     bot.appendChild(link);
@@ -88,5 +90,8 @@ document.addEventListener("click", (e) => {
         catch (error) {
             console.error(error);
         }
+    }
+    if (e.target.closest(".bot--link")) {
+        window.open(links[e.target.Id], "_blank");
     }
 });
