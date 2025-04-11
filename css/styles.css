@@ -247,7 +247,7 @@ body{
         min-width: 100vw;
     }
     .redesign{
-        width: 50vw;
+        max-width: 50vw;
     }
     .redesign__main{
         flex-direction: column;
