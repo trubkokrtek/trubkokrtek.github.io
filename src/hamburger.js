@@ -83,6 +83,7 @@ document.addEventListener("click", (e) => {
                     link.textContent = "Pokud hledáš informace o " + string + ", klikni ";
                     link.appendChild(span);
                     link.classList.add("bot__text");
+                    
                     bot.appendChild(link);
                 }
             }
@@ -91,7 +92,7 @@ document.addEventListener("click", (e) => {
             console.error(error);
         }
     }
-    if (e.target.closest(".bot--link")) {
+    if (e.target.closest(".bot__text")) {
         window.open(links[e.target.Id], "_blank");
     }
 });
