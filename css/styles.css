@@ -221,6 +221,9 @@ body{
     margin: 0 auto;
 }
 @media screen and (max-width: 960px) {
+    .header{
+        padding: .5em;
+    }
     .chatbot{
         min-width: calc(100vw - 1em);
         border: 0;
@@ -242,6 +245,9 @@ body{
     }  
     .table{
         min-width: 100vw;
+    }
+    .redesign{
+        width: 50vw;
     }
     .redesign__main{
         flex-direction: column;
