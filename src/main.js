@@ -2,6 +2,7 @@ const links = {
     "parkování": "https://www.parking.liberec.cz//",
     "parkoviště": "https://www.parking.liberec.cz//",
     "ztráty": "https://www.liberec.cz/ztraty-nalezy/",
+    "nálezy": "https://www.liberec.cz/ztraty-nalezy/",
     "uzavírky": "https://www.liberec.cz/uzavirky/",
     "aktivity": "https://www.kudyznudy.cz/kam-pojedete/liberecky-kraj/jizerske-hory/liberec",
     "aktuality": "https://www.liberec.cz/cz/obcan/",
@@ -15,7 +16,15 @@ const links = {
     "opravy": "https://www.liberec.cz/uzavirky/",
     "dpmlj": "https://www.dpmlj.cz/",
     "doprava": "https://www.dpmlj.cz/",
-    "lyže": "https://www.skijested.cz/"
+    "lyže": "https://www.skijested.cz/",
+    "zoo": "https://www.zooliberec.cz/",
+    "počasí": "https://www.foreca.cz/%C4%8Cesk%C3%A1-republika/Libereck%C3%BD-kraj/Liberec",
+    "zprávy": "https://liberecka.drbna.cz/",
+    "kraj": "https://www.kraj-lbc.cz/",
+    "fotbal": "https://www.fcslovanliberec.cz/",
+    "hokej": "https://www.hcbilitygri.cz/",
+    "mapa": "https://mapy.cz/zakladni?q=liberec&source=muni&id=1818&ds=2&x=15.0499264&y=50.7651803&z=12",
+    "areály": "https://www.sportparkliberec.cz/",
 }
 
 function chatbot() {
@@ -53,6 +62,41 @@ function chatbot() {
                 para.textContent = "Kuk";
                 para.classList.add("bot__text");
                 bot.appendChild(para);
+            }
+            else if (string.toLowerCase() == "sport") {
+                var link = document.createElement("a");
+                var span = document.createElement("span");
+                span.classList.add("bot--link");
+                span.textContent = "fotbal";
+                link.href = links["fotbal"];
+                link.id = "fotbal";
+                link.target = "_blank";
+                link.textContent = "Pokud hledáš sportovní informace, zde klikni pro ";
+                link.appendChild(span);
+                link.classList.add("bot__text");
+
+                var link = document.createElement("a");
+                var span = document.createElement("span");
+                span.classList.add("bot--link");
+                span.textContent = "hokej";
+                link.href = links["hokej"];
+                link.id = "hokej";
+                link.target = "_blank";
+                link.textContent = "Zde klikni pro ";
+                link.appendChild(span);
+                link.classList.add("bot__text");
+                
+                var link = document.createElement("a");
+                var span = document.createElement("span");
+                span.classList.add("bot--link");
+                span.textContent = "sportovní areál";
+                link.href = links["areály"];
+                link.id = "areály";
+                link.target = "_blank";
+                link.textContent = "Zde klikni pro ";
+                link.appendChild(span);
+                link.classList.add("bot__text");
+
             }
             else if (links[string.toLowerCase()]) {
                 const link = document.createElement("a");

@@ -60,7 +60,9 @@ body{
 }
 .redesign{
     max-width: 25vw;
+    font-weight: 500;
     margin: .5em auto;
+    text-align: center;
 }
 .chatbot__header{
     height: 2em;
