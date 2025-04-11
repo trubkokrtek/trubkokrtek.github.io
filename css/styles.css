@@ -220,6 +220,10 @@ body{
     height: 50vw;
     margin: 0 auto;
 }
+.redesign__image--container{
+    padding-left: 8px;
+    border-left: 1px solid var(--black);
+}
 @media screen and (max-width: 960px) {
     .header{
         padding: .5em;
@@ -258,5 +262,7 @@ body{
     }
     .redesign__image--container{
         display: flex;
+        border: 0;
+        padding: 0;
     }
 }
