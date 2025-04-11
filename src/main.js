@@ -39,6 +39,7 @@ document.addEventListener("click", (e) => {
         if (chatbot) {
             chatbot.classList.toggle("active");
             chatbotswitch.classList.toggle("active");
+            location.reload()
         }
     }
     if (e.target.closest(".user__input--btn")) {
@@ -48,13 +49,12 @@ document.addEventListener("click", (e) => {
             console.log(inputvalue);
             textfield.value = "";
             //alert(inputvalue);
-            
+            if (inputvalue == "") {return;}
             const para = document.createElement("p");
             para.textContent = inputvalue;
             para.classList.add("user__text");
             para.value = inputvalue;
             const clone = para.cloneNode(true);
-
             const list = document.querySelector(".user");
             list.appendChild(para);
             
